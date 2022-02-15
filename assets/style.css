@@ -1,0 +1,235 @@
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.header-forgot {
+    background-image: url(./image/backgroud-image-forgotpassword.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-forgot .header-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 758px;
+    color: white;
+}
+
+.header-forgot .header-content .header-nav {
+    margin: 0.89px;
+    padding-top: 74px;
+}
+
+.header-forgot .header-content .header-nav i {
+    font-size: 30px;
+    margin-right: 76px;
+}
+
+.header-forgot .header-content .header-nav span {
+    font-size: 24px;
+}
+
+.header-forgot .header-content h1.heading {
+    font-size: 64;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-weight: bold;
+    line-height: 85px;
+    margin-top: 40px;
+}
+
+.header-forgot .header-content form div {
+    text-align: center;
+}
+
+.header-forgot .header-content form div input {
+    height: 79px;
+    width: 447px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    margin-bottom: 31px;
+}
+
+.header-forgot .header-content form div input:focus {
+    outline: none;
+}
+
+.header-forgot .header-content form div input::placeholder {
+    color: white;
+}
+
+.header-forgot .header-content form div button.button-send {
+    background-color: #FFCD61;
+    font-size: 24px;
+    height: 79px;
+    width: 447px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 900;
+}
+
+.header-forgot .header-content .text {
+    font-size: 24px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 54px;
+}
+
+.header-login-signup {
+    background-image: url(../assets/image/background-login-signup.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-login-signup .header-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 758px;
+    color: white;
+}
+
+.header-login-signup .header-content .header-title {
+    margin-top: 107px;
+    border-right: 1px solid white;
+}
+
+.header-login-signup .header-content h1.heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 64;
+    font-weight: 700;
+    text-align: justify;
+    width: 390px;
+    margin-bottom: 43px;
+}
+
+.header-login-signup .header-content .header-title .text {
+    font-weight: 700;
+    size: 24px;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+.header-login-signup .header-content .header-title button.button-login-signup {
+    background-color: #393939;
+    color: #FFCD61;
+    box-shadow: 0px 0px 20px rgba(218, 218, 218, 0.25);
+    border-radius: 10px;
+    width: 391px;
+    height: 79px;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.header-login-signup .header-content .header-login form {
+    margin-top: 176px;
+}
+
+.header-login-signup .header-content .header-login form div {
+    text-align: center;
+}
+
+.header-login-signup .header-content .header-login form div input {
+    background: rgba(255, 255, 255, 0.26);
+    width: 447px;
+    height: 79px;
+    margin-top: 34px;
+    border: none;
+    border-radius: 10px;
+}
+
+.header-login-signup .header-content .header-login form div input:focus {
+    outline: none;
+}
+
+.header-login-signup .header-content .header-login form div input::placeholder {
+    color: white;
+    font-size: 24px;
+    padding-left: 41px;
+}
+
+.header-login-signup .header-content .header-login form p {
+    margin-top: 14px;
+    margin-bottom: 49px;
+}
+
+.header-login-signup .header-content .header-login form p a {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.header-login-signup .header-content .header-login form div button.button-login {
+    background-color: #FFCD61;
+    color: black;
+    font-size: 24px;
+    font-weight: 900;
+    width: 446px;
+    height: 79px;
+    box-shadow: 0px 0px 20px rgba(248, 161, 112, 0.47);
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 34px;
+}
+
+.header-login-signup .header-content .header-login form div button.button-login-google {
+    background-color: white;
+    color: black;
+    font-size: 24px;
+    font-weight: 900;
+    width: 447px;
+    height: 79px;
+    border-radius: 10px;
+    border: none;
+}
+
+.header-login-signup .header-content .header-login form div button.button-login-google img {
+    width: 31px;
+    height: 33px;
+    margin-right: 12px;
+}
+
+footer.footer {
+    margin-top: 69px;
+}
+
+footer .footer .row.text {
+    margin-bottom: 78px;
+}
+
+footer.footer ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+footer.footer .description {
+    margin-top: 26px;
+    margin-bottom: 53px;
+    width: 300px;
+}
+
+footer.footer .link-social {
+    border-top: 1px solid #c4c4c4;
+    padding: 31px;
+    text-align: center;
+}
+
+footer.footer .link-social i {
+    font-size: 25px;
+    margin-left: 17.5px;
+    margin-right: 17.5px;
+}
+
+@media (max-width:500px) {
+    .header-forgot .header-content {
+        padding: 0 10px;
+    }
+    .header-forgot .header-content form div input {
+        width: 100%;
+    }
+    .header-forgot .header-content form div button.button-send {
+        width: 100%;
+    }
+}
