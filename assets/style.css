@@ -11,6 +11,7 @@ body {
 .header-forgot .header-content {
     background-color: rgba(0, 0, 0, 0.5);
     height: 758px;
+    padding-left: 139px;
     color: white;
 }
 
@@ -97,7 +98,7 @@ body {
 
 .header-login-signup .header-content h1.heading {
     font-family: 'Playfair Display', serif;
-    font-size: 64;
+    font-size: 64px;
     font-weight: 700;
     text-align: justify;
     width: 390px;
@@ -126,11 +127,15 @@ body {
     margin-top: 176px;
 }
 
-.header-login-signup .header-content .header-login form div {
+.header-login-signup .header-content .header-signup form {
+    margin-top: 129px;
+}
+
+.form-login-signup div {
     text-align: center;
 }
 
-.header-login-signup .header-content .header-login form div input {
+.form-login-signup div input {
     background: rgba(255, 255, 255, 0.26);
     width: 447px;
     height: 79px;
@@ -139,28 +144,36 @@ body {
     border-radius: 10px;
 }
 
-.header-login-signup .header-content .header-login form div input:focus {
+.form-login-signup div input:focus {
     outline: none;
+    color: white;
 }
 
-.header-login-signup .header-content .header-login form div input::placeholder {
+.form-login-signup div input::placeholder {
     color: white;
     font-size: 24px;
     padding-left: 41px;
 }
 
-.header-login-signup .header-content .header-login form p {
+.form-login-signup p {
     margin-top: 14px;
-    margin-bottom: 49px;
 }
 
-.header-login-signup .header-content .header-login form p a {
+.form-login-signup p a {
     color: white;
     font-size: 18px;
     font-weight: 700;
 }
 
-.header-login-signup .header-content .header-login form div button.button-login {
+.signup {
+    margin-top: 27px;
+}
+
+.login {
+    margin-top: 49px;
+}
+
+.button-login-signup {
     background-color: #FFCD61;
     color: black;
     font-size: 24px;
@@ -170,10 +183,10 @@ body {
     box-shadow: 0px 0px 20px rgba(248, 161, 112, 0.47);
     border-radius: 10px;
     border: none;
-    margin-bottom: 34px;
+    padding: 0;
 }
 
-.header-login-signup .header-content .header-login form div button.button-login-google {
+.button-login-signup-google {
     background-color: white;
     color: black;
     font-size: 24px;
@@ -181,10 +194,11 @@ body {
     width: 447px;
     height: 79px;
     border-radius: 10px;
+    margin-top: 34px;
     border: none;
 }
 
-.header-login-signup .header-content .header-login form div button.button-login-google img {
+.button-login-signup-google img {
     width: 31px;
     height: 33px;
     margin-right: 12px;
@@ -204,13 +218,39 @@ footer.footer ul {
     margin-bottom: 0;
 }
 
+footer.footer ul li {
+    font-family: 'Mulish', serif;
+    font-weight: 300;
+    color: #848484;
+    font-size: 18;
+    margin-top: 10px;
+}
+
 footer.footer .description {
+    font-family: 'Mulish', serif;
     margin-top: 26px;
     margin-bottom: 53px;
     width: 300px;
+    color: #848484;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+footer.footer .copyright {
+    font-family: 'Mulish', serif;
+    color: #848484;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+footer.footer h5 {
+    font-family: 'Mulish', serif;
+    font-weight: bold;
+    font-size: 19px;
 }
 
 footer.footer .link-social {
+    margin-top: 78px;
     border-top: 1px solid #c4c4c4;
     padding: 31px;
     text-align: center;
@@ -222,7 +262,27 @@ footer.footer .link-social i {
     margin-right: 17.5px;
 }
 
-@media (max-width:500px) {
+nav .container {
+    padding-top: 73px;
+}
+
+button {
+    width: 132px;
+    height: 44px;
+    border-radius: 8px;
+}
+
+nav button.button-login {
+    border: 1px solid #FFCD61;
+    background-color: white;
+}
+
+nav button.button-register {
+    background-color: #FFCD61;
+    border: none;
+}
+
+@media (max-width:767px) {
     .header-forgot .header-content {
         padding: 0 10px;
     }
@@ -231,5 +291,34 @@ footer.footer .link-social i {
     }
     .header-forgot .header-content form div button.button-send {
         width: 100%;
+    }
+    .header-forgot .header-content {
+        padding: 0 10px;
+    }
+    .header-forgot .header-content form div input {
+        width: 100%;
+    }
+    .header-login-signup .header-content {
+        padding: 0 10px;
+        height: 100%;
+        width: 100%;
+    }
+    .header-login-signup .header-content .header-title {
+        border-right: none;
+        border-bottom: 1px solid white;
+        padding-bottom: 20px;
+    }
+    .header-login-signup .header-content .header-title button.button-login-signup {
+        width: 100%;
+    }
+    .header-forgot .header-content form div input {
+        width: 100%;
+    }
+    .header-login-signup .header-content .header-login form div button.button-form {
+        width: 100%;
+    }
+    .header-login-signup .header-content .header-login form div button.button-google {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
