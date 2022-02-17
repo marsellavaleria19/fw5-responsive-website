@@ -37,6 +37,11 @@
                         <p class="text">Don't have account?</p>
                         <button class="button-login-signup">Sign Up</button>
                     </div>
+                    <div class="header-separator col d-flex align-items-center flex-column">
+                        <div class="separator-circle"></div>
+                        <div class="separator-line"></div>
+                        <div class="separator-circle"></div>
+                    </div>
                     <div class="header-login col-md-6">
                         <form class="form-login-signup">
                             <div>
@@ -46,8 +51,6 @@
                                 <input type="password" placeholder="Password" />
                                 <p><a href="forgot-password.html">forgot password?</a></p>
                             </div>
-
-
                             <div>
                                 <button class="button-login-signup login">Login</button>
                             </div>
@@ -59,59 +62,17 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </header>
-    <footer class="footer container">
-        <div class="row text">
-            <div class="col">
-                <div>
-                    <img src="./assets/image/logo.png" alt="Logo">
-                </div>
-                <div class="description">
-                    Plan and book your perfect trip with expert advice, travel tips for vehicle information from us
-                </div>
-                <div class="copyright">©2020 Vehicle Rental Center. All rights reserved</div>
-            </div>
-            <div class="col-md-2">
-                <h5>Destination</h5>
-                <ul>
-                    <li>Bali</li>
-                    <li>Yogyakarta</li>
-                    <li>Jakarta</li>
-                    <li>Kalimantan</li>
-                    <li>Malang</li>
-                </ul>
-            </div>
-            <div class="col-md-2">
-                <h5>Vehicle</h5>
-                <ul>
-                    <li>Bike</li>
-                    <li>Cars</li>
-                    <li>Motorbike</li>
-                    <li>Return Times</li>
-                    <li>FAQs</li>
-                </ul>
-            </div>
-            <div class="col-md-2">
-                <h5>Interests</h5>
-                <ul>
-                    <li>Adventure Travel</li>
-                    <li>Art And Culture</li>
-                    <li>Wildlife And Nature</li>
-                    <li>Family Holidays</li>
-                    <li>Culinary Trip</li>
-                </ul>
-            </div>
-        </div>
-        <div class="link-social">
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-linkedin-in"></i>
-            <i class="fa-brands fa-youtube"></i>
-        </div>
-    </footer>
+    <div id="footer"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $.get('./footer.html', (res) => {
+                $('#footer').html(res)
+            })
+        })
+    </script>
 </body>
 
 </html>
