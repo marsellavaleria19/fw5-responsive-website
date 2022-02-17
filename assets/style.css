@@ -431,6 +431,12 @@ nav button.button-register {
     font-weight: 700;
 }
 
+.testimonial .card-body .star {
+    font-size: 23px;
+    color: #FFBB0C;
+    margin-bottom: 30px;
+}
+
 .testimonial .card-body p {
     font-family: 'Mulish', serif;
     font-size: 24px;
