@@ -79,6 +79,27 @@ body {
     margin-top: 54px;
 }
 
+.button-filled {
+    background-color: #FFCD61;
+    width: 132px;
+    height: 44px;
+    border-radius: 8px;
+}
+
+.button-dark {
+    background-color: #393939;
+    width: 132px;
+    height: 44px;
+    border-radius: 8px;
+}
+
+.button-gray {
+    background-color: rgba(203, 203, 212, 0.27);
+    width: 132px;
+    height: 44px;
+    border-radius: 8px;
+}
+
 .header-login-signup {
     background-image: url(../assets/image/background-login-signup.jpg);
     background-repeat: no-repeat;
@@ -91,18 +112,33 @@ body {
     color: white;
 }
 
-.header-login-signup .header-content .header-title {
+.header-content .header-title {
     margin-top: 107px;
-    border-right: 1px solid white;
 }
 
-.header-login-signup .header-content h1.heading {
+.header-content h1.heading {
     font-family: 'Playfair Display', serif;
     font-size: 64px;
     font-weight: 700;
     text-align: justify;
-    width: 390px;
     margin-bottom: 43px;
+}
+
+.header-separator {
+    margin-top: 104px;
+}
+
+.separator-circle {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.separator-line {
+    width: 1px;
+    height: 100%;
+    background-color: white;
 }
 
 .header-login-signup .header-content .header-title .text {
@@ -402,16 +438,35 @@ nav button.button-register {
     font-size: 16px;
 }
 
+.popular-town .card .card-body .row .col {
+    position: relative;
+}
+
 .popular-town .card .card-body .row .col .img {
     height: 100%;
 }
 
 .popular-town .card .card-body .row .col .text {
     position: absolute;
-    background-color: red;
-    width: 20px;
-    height: 20px;
-    bottom: 10px;
+    background-color: white;
+    border-radius: 0px 6px 0px 0px;
+    width: 120px;
+    height: 56px;
+    bottom: 0px;
+    text-align: center;
+}
+
+.popular-town .card .card-body .row .col .text h2 {
+    font-family: 'Nunito', serif;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.popular-town .card .card-body .row .col .text h3 {
+    font-family: 'Nunito', serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: silver;
 }
 
 .popular-town {
@@ -466,6 +521,138 @@ nav button.button-register {
 .testimonial .card-body .row .col img {
     width: 384px;
     height: 491px;
+}
+
+.badge-mail {
+    background-color: #FFCD61;
+    color: black;
+    font-size: 10px;
+    font-weight: 700;
+    font-family: 'Rubik', serif;
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    top: 7px;
+    left: 0px;
+    text-align: center;
+}
+
+nav div a img.profile {
+    width: 50px;
+    height: 50px;
+}
+
+nav div a img.mail {
+    width: 40px;
+    height: 36px;
+}
+
+.profile-general {
+    text-align: center;
+}
+
+.profile h1.title {
+    font-family: 'Nunito', serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 57px;
+}
+
+.button-edit-profile {
+    border: unset;
+    background-color: #FFCD61;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.profile-detail {
+    margin-top: 40px;
+}
+
+.profile-detail h1.name {
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'Playfair Display', Times, serif;
+    margin-bottom: 40px;
+}
+
+.profile-detail .detail {
+    font-family: 'Nunito', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #B8BECD;
+}
+
+.profile-radio {
+    margin-top: 134px;
+}
+
+.radio-gender {
+    width: 30px;
+    height: 30px;
+}
+
+.profile-radio div label {
+    font-family: Nunito;
+    font-size: 24px;
+    color: #9F9F9F;
+}
+
+.profile-form {
+    margin-top: 67px;
+}
+
+.profile-form h5 {
+    font-family: 'Nunito', serif;
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 37px;
+}
+
+.profile-form form div label {
+    font-family: 'Nunito', serif;
+    font-size: 24px;
+    color: #9F9F9F;
+}
+
+.profile-form form div input {
+    border: none;
+    border-bottom: 1px solid #000000;
+    font-family: 'Nunito', serif;
+    font-size: 24px;
+    padding-bottom: 26px;
+}
+
+.profile-form form div input:focus {
+    outline: none;
+}
+
+.profile-form form div textarea {
+    border: none;
+    border-bottom: 1px solid #000000;
+    font-family: 'Nunito', serif;
+    font-size: 24px;
+}
+
+.profile-form form div textarea:focus {
+    outline: none;
+}
+
+.profile-form form div .button-filled,
+.profile-form form div .button-dark,
+.profile-form form div .button-gray {
+    width: 322px;
+    height: 89px;
+    color: #393939;
+    font-size: 24px;
+    font-family: 'Nunito', serif;
+    font-weight: 900;
+}
+
+.profile-form form div .button-dark {
+    color: #FFCD61;
 }
 
 @media (max-width:767px) {
