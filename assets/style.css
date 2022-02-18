@@ -689,6 +689,135 @@ nav div a img.mail {
     color: #FFCD61;
 }
 
+.header-nav {
+    font-family: 'Nunito', serif;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.detail-vehicle .header-nav {
+    margin-bottom: 112px;
+}
+
+.detail-vehicle .header-nav i {
+    font-size: 43px;
+    font-weight: 700;
+    color: #4A4C53;
+    margin-right: 61px;
+}
+
+.detail-vehicle .img-vehicle {
+    width: 610px;
+    height: 409px;
+    margin-bottom: 25px;
+}
+
+.detail-vehicle .img-vehicle-detail img {
+    width: 233px;
+    height: 158px;
+}
+
+.detail-vehicle .img-vehicle-detail i {
+    font-size: 43px;
+    color: #4A4C53;
+}
+
+.detail-vehicle .title {
+    padding: 0;
+    font-family: 'Playfair Display', Times, serif;
+    margin-bottom: 48px;
+}
+
+.detail-vehicle .title h1 {
+    font-weight: 900;
+}
+
+.detail-vehicle .title .location {
+    font-size: 36px;
+}
+
+.detail-vehicle .status {
+    font-size: 24px;
+    margin-bottom: 29px;
+}
+
+.detail-vehicle .detail-info {
+    font-family: 'Nunito', serif;
+    font-size: 24px;
+}
+
+.detail-vehicle .price {
+    font-size: 36px;
+    font-weight: 900;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.detail-vehicle .price h1 {
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.detail-vehicle form input {
+    border: none;
+    font-family: 'Nunito', serif;
+    font-size: 48px;
+    text-align: center;
+    width: 321px;
+    font-weight: 900;
+}
+
+.detail-vehicle form button {
+    width: 80px;
+    height: 80px;
+    font-size: 48px;
+    font-weight: 900;
+    font-family: 'Nunito', serif;
+    border: none;
+    border-radius: 10px;
+}
+
+.detail-vehicle form button.plus {
+    background-color: #FFCD61;
+}
+
+.detail-vehicle form button.minus {
+    background-color: rgba(203, 203, 212, 0.2);
+}
+
+.detail-vehicle .button-detail {
+    margin-top: 58px;
+}
+
+.detail-vehicle .button-detail .button-dark,
+.detail-vehicle .button-detail .button-filled {
+    height: 89px;
+    font-size: 'Nunito', serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 35px;
+}
+
+.detail-vehicle .button-detail .button-dark {
+    color: #FFCD61;
+}
+
+.detail-vehicle .button-detail .btn-chat {
+    width: 443px;
+}
+
+.detail-vehicle .button-detail .btn-reservation {
+    width: 421px;
+}
+
+.detail-vehicle .button-detail .btn-like {
+    width: 225px;
+}
+
+.detail-vehicle .button-detail .btn-like i {
+    font-size: 50px;
+}
+
 @media (max-width:1119px) {
     .header-forgot .header-content {
         padding: 0 10px;
