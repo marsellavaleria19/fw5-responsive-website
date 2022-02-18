@@ -695,8 +695,54 @@ nav div a img.mail {
     font-weight: 700;
 }
 
+.title-vehicle {
+    font-family: 'Playfair Display', Times, serif;
+}
+
+.title-vehicle h1 {
+    font-weight: 900;
+}
+
+.title-vehicle .location {
+    font-size: 36px;
+}
+
+.status-vehicle {
+    font-size: 24px;
+}
+
+.status-vehicle .no-prepayment {
+    color: #9B0A0A;
+}
+
 .detail-vehicle .header-nav {
     margin-bottom: 112px;
+}
+
+.form-quantity input {
+    border: none;
+    font-family: 'Nunito', serif;
+    font-size: 48px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.form-quantity button {
+    width: 80px;
+    height: 80px;
+    font-size: 48px;
+    font-weight: 900;
+    font-family: 'Nunito', serif;
+    border: none;
+    border-radius: 10px;
+}
+
+.form-quantity button.plus {
+    background-color: #FFCD61;
+}
+
+.bform-quantity button.minus {
+    background-color: rgba(203, 203, 212, 0.2);
 }
 
 .detail-vehicle .header-nav i {
@@ -722,22 +768,11 @@ nav div a img.mail {
     color: #4A4C53;
 }
 
-.detail-vehicle .title {
-    padding: 0;
-    font-family: 'Playfair Display', Times, serif;
+.detail-vehicle .title-vehicle {
     margin-bottom: 48px;
 }
 
-.detail-vehicle .title h1 {
-    font-weight: 900;
-}
-
-.detail-vehicle .title .location {
-    font-size: 36px;
-}
-
-.detail-vehicle .status {
-    font-size: 24px;
+.detail-vehicle .status-vehicle {
     margin-bottom: 29px;
 }
 
@@ -758,31 +793,8 @@ nav div a img.mail {
     font-weight: 900;
 }
 
-.detail-vehicle form input {
-    border: none;
-    font-family: 'Nunito', serif;
-    font-size: 48px;
-    text-align: center;
+.detail-vehicle .form-quantity input {
     width: 321px;
-    font-weight: 900;
-}
-
-.detail-vehicle form button {
-    width: 80px;
-    height: 80px;
-    font-size: 48px;
-    font-weight: 900;
-    font-family: 'Nunito', serif;
-    border: none;
-    border-radius: 10px;
-}
-
-.detail-vehicle form button.plus {
-    background-color: #FFCD61;
-}
-
-.detail-vehicle form button.minus {
-    background-color: rgba(203, 203, 212, 0.2);
 }
 
 .detail-vehicle .button-detail {
@@ -816,6 +828,27 @@ nav div a img.mail {
 
 .detail-vehicle .button-detail .btn-like i {
     font-size: 50px;
+}
+
+.reservation .header-nav {
+    margin-bottom: 121px;
+}
+
+.reservation .img-vehicle img {
+    width: 696px;
+    height: 616px;
+}
+
+.reservation .title-vehicle {
+    margin-bottom: 32px;
+}
+
+.reservation .status-vehicle {
+    margin-bottom: 74px;
+}
+
+.reservation .form-quantity input {
+    width: 261px;
 }
 
 @media (max-width:1119px) {
