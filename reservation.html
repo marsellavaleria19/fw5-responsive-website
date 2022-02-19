@@ -53,17 +53,24 @@
                         <button class="minus">-</button>
                     </div>
                     <h5>Reservation Date</h5>
-                    <input type="date" placeholder="Select date" />
-                    <select name="" id=""></select>
+                    <div class="mb-3">
+                        <input type="date" class="form-control input-add" placeholder="date">
+                    </div>
+                    <div class="select-form d-flex position-relative align-items-center">
+                        <select class="form-select" value="1">
+                            <option value="1">1 Day</option>
+                            <option value="2">2 Day</option>
+                            <option value="3">3 Day</option>
+                          </select>
+                        <i class="position-absolute arrow-select fa-solid fa-chevron-down"></i>
+                    </div>
+
 
                 </form>
             </div>
         </div>
-        <div class="button-detail d-flex justify-content-between">
-            <button class="button-dark btn-chat">Chat Admin</button>
-            <button class="button-filled btn-reservation">Reservation</button>
-            <button class="button-dark btn-like d-flex justify-content-center align-items-center">
-                <i class="fa-solid fa-heart me-3"></i>Like</button>
+        <div class="btn-payment">
+            <button class="button-filled">Pay now : Rp. 178.000</button>
         </div>
     </section>
     <div id="footer"></div>
