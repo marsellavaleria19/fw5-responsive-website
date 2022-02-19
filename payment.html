@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <!--Bootstrap CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css" integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.bundle.min.js" integrity="sha512-sH8JPhKJUeA9PWk3eOcOl8U+lfZTgtBXD41q6cO/slwxGHCxKcW45K4oPCUhHG7NMB4mbKEddVmPuTXtpbCbFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap" rel="stylesheet">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <header>
+        <div id="navbar"></div>
+    </header>
+    <section class="payment container mb-5">
+        <div class="header-nav">
+            <i class="fa-solid fa-chevron-left"></i>
+            <span>Payment</span>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="img-vehicle">
+                    <img src="./assets/image/detail-vehicle.png" alt="detail-vehicle">
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="title-vehicle">
+                    <h1>Fixie-Gray Only</h1>
+                    <div class="location">Yogyakarta</div>
+                </div>
+                <div class="text-status fw-bold mt-4">No Prepayment</div>
+                <div class="code-payment mt-3">
+                    <h1>#FG1209878YZS</h1>
+                </div>
+                <div class="btn-copy-code mt-3">
+                    <button class="button-filled">Copy booking code</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="reservation-detail text-detail-payment-reservation  mt-4">
+            <div class="row">
+                <div class="col">
+                    <div class="qty text-payment-reservation d-flex justify-content-center align-items-center fw-bold">Qty : 2 bikes</div>
+                </div>
+                <div class="col date d-flex justify-content-between align-items-center">
+                    <div class="fw-bold">Reservation Date : </div>
+                    <div>Jan 18 - 20 2021</div>
+                </div>
+            </div>
+        </div>
+        <div class="detail-payment text-detail-payment-reservation  mt-4">
+            <div class="row">
+                <div class="col order-detail  me-4">
+                    <h5>Details:</h5>
+                    <ul>
+                        <li>1 bike : Rp.78.000</li>
+                        <li>1 bike : Rp.78.000</li>
+                    </ul>
+                    <div>Total : Rp. 178.000</div>
+                </div>
+                <div class="col identity align-items-center">
+                    <h5>Identity:</h5>
+                    <ul>
+                        <li>Samantha Doe (+6290987682)</li>
+                        <li>samanthadoe@mail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="payment-transaction text-detail-payment-reservation mt-4">
+            <div class="row">
+                <div class="col label fw-bold">Payment Code:</div>
+                <div class="col payment-code d-flex justify-content-between align-items-center">
+                    <div class="fw-bold">#FG1209878YZS</div>
+                    <button class="button-dark">Copy</button>
+                </div>
+                <div class="col align-items-center">
+                    <div class="select-form payment-method d-flex position-relative align-items-center">
+                        <select class="form-select">
+                            <option class="select-items">Select Payment Method</option>
+                            <option class="select-items" value="1">Cash</option>
+                            <option class="select-items" value="2">Transfer</option>
+                          </select>
+                        <i class="position-absolute arrow-select fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-payment">
+            <button class="button-filled">Finish payment : <span class="text-danger fw-load">59:30</span></button>
+        </div>
+    </section>
+    <div id="footer"></div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function() {
+        $.get('./navbar.html', (res) => {
+            $('#navbar').html(res)
+        })
+    })
+
+    $(document).ready(function() {
+        $.get('./footer.html', (res) => {
+            $('#footer').html(res)
+        })
+    })
+</script>
+
+</html>
