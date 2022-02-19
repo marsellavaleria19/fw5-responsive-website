@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Nunito', sans-serif;
 }
@@ -113,6 +118,9 @@ h1 {
     width: 132px;
     height: 44px;
     border-radius: 8px;
+    border: none;
+    color: black;
+    font-size: 24px;
 }
 
 .button-dark {
@@ -185,7 +193,7 @@ h1.heading {
 }
 
 .header-title .button-dark {
-    width: 391px;
+    width: 100%;
     height: 79px;
     font-family: 'Nunito', serif;
     font-size: 24px;
@@ -241,11 +249,9 @@ h1.heading {
     margin-top: 49px;
 }
 
-.form-login-signup button.button-filled {
-    color: black;
-    font-size: 24px;
+.form-login-signup .button-filled {
     font-weight: 900;
-    width: 446px;
+    width: 100%;
     height: 79px;
     box-shadow: 0px 0px 20px rgba(248, 161, 112, 0.47);
     border-radius: 10px;
@@ -434,6 +440,28 @@ nav .button-white {
     color: #FB8F1D;
 }
 
+.text-title-vehicle {
+    position: absolute;
+    background-color: white;
+    border-radius: 0px 6px 0px 0px;
+    width: 120px;
+    height: 56px;
+    bottom: 0px;
+    text-align: center;
+}
+
+.text-title-vehicle .vehicle-name {
+    font-family: 'Nunito', serif;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.text-title-vehicle .location {
+    font-family: 'Nunito', serif;
+    font-size: 15px;
+    color: #9F9F9F;
+}
+
 .popular-town {
     margin-top: 82px;
 }
@@ -466,28 +494,6 @@ nav .button-white {
     height: 332px;
     width: 261px;
     border-radius: 8px;
-}
-
-.popular-town .text {
-    position: absolute;
-    background-color: white;
-    border-radius: 0px 6px 0px 0px;
-    width: 120px;
-    height: 56px;
-    bottom: 0px;
-    text-align: center;
-}
-
-.popular-town .text .vehicle-name {
-    font-family: 'Nunito', serif;
-    font-size: 17px;
-    font-weight: 700;
-}
-
-.popular-town .text .location {
-    font-family: 'Nunito', serif;
-    font-size: 15px;
-    color: #9F9F9F;
 }
 
 .testimonial {
@@ -695,6 +701,13 @@ nav div a img.mail {
     font-weight: 700;
 }
 
+.header-nav i {
+    font-size: 43px;
+    font-weight: 700;
+    color: #4A4C53;
+    margin-right: 61px;
+}
+
 .title-vehicle {
     font-family: 'Playfair Display', Times, serif;
 }
@@ -720,6 +733,7 @@ nav div a img.mail {
 }
 
 .form-quantity input {
+    background-color: white;
     border: none;
     font-family: 'Nunito', serif;
     font-size: 48px;
@@ -741,15 +755,12 @@ nav div a img.mail {
     background-color: #FFCD61;
 }
 
-.bform-quantity button.minus {
+.form-quantity button.minus {
     background-color: rgba(203, 203, 212, 0.2);
 }
 
-.detail-vehicle .header-nav i {
-    font-size: 43px;
-    font-weight: 700;
-    color: #4A4C53;
-    margin-right: 61px;
+.detail-vehicle .header-nav {
+    margin-bottom: 112px;
 }
 
 .detail-vehicle .img-vehicle {
@@ -851,7 +862,422 @@ nav div a img.mail {
     width: 261px;
 }
 
-@media (max-width:1119px) {
+.reservation form h5 {
+    font-family: 'Nunito', serif;
+    font-size: 24px;
+    margin-top: 73px;
+    margin-bottom: 32px;
+    font-weight: bold;
+}
+
+.reservation form .input-add {
+    width: 339px;
+    height: 80px;
+    background-color: rgba(57, 57, 57, 0.1);
+    border-radius: 10px;
+    font-family: 'Nunito', serif;
+    font-size: 24px;
+    color: #80918E;
+}
+
+.reservation form .select-form {
+    width: 339px;
+    height: 80px;
+}
+
+.reservation form .select-form select {
+    width: 339px;
+    height: 80px;
+    background-color: rgba(57, 57, 57, 0.1);
+    border-radius: 10px;
+    font-family: 'Nunito', serif;
+    font-size: 24px;
+    background-image: unset;
+    color: #80918E;
+}
+
+.reservation form .select-form .arrow-select {
+    right: 30px;
+    font-size: 30px;
+    font-weight: 900;
+    color: #4A4C53;
+}
+
+.btn-payment {
+    margin-top: 92px;
+}
+
+.btn-payment .button-filled {
+    width: 100%;
+    height: 89px;
+    font-size: 24px;
+    font-weight: 900;
+    border: none;
+}
+
+.text-detail-payment-reservation {
+    font-family: 'Nunito', serif;
+    font-size: 24px;
+    color: #393939;
+}
+
+.reservation-detail .header-nav {
+    margin-bottom: 121px;
+}
+
+.reservation-detail .img-vehicle img {
+    width: 660px;
+    height: 477px;
+}
+
+.reservation-detail .title-vehicle {
+    margin-bottom: 33px;
+}
+
+.reservation-detail .reservation {
+    width: 100%;
+    height: 107px;
+    margin-bottom: 30px;
+    border: 1px solid #80918E;
+    padding: 21px 0 20px 44px;
+    border-radius: 10px;
+}
+
+.reservation-detail .text-status {
+    color: #80918E;
+}
+
+.reservation-detail .detail-reservation {
+    border: 1px solid #80918E;
+    padding: 54px 47px;
+    border-radius: 10px;
+    width: 100%;
+    height: 216px;
+}
+
+.reservation-detail .detail-reservation h5 {
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.reservation-detail .detail-reservation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.reservation-detail .detail-reservation ul li {
+    margin-bottom: 10px;
+    left: 0;
+}
+
+.reservation-detail .reservation-date {
+    margin-top: 67px;
+}
+
+.reservation-detail .reservation-date .label {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.reservation-detail .reservation-date button {
+    width: 317px;
+    height: 89px;
+    border: 1px solid #80918E;
+    border-radius: 10px;
+    margin-right: 48px;
+    background-color: white;
+}
+
+.reservation-detail .payment-total {
+    width: 100%;
+    height: 116px;
+    border: 1px solid #80918E;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 49px;
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 900;
+    padding-top: 30px;
+}
+
+.reservation-detail .reservation .text-status {
+    color: #80918E;
+}
+
+.payment .header-nav {
+    margin-bottom: 105px;
+}
+
+.payment .img-vehicle img {
+    width: 452px;
+    height: 317px;
+}
+
+.payment .btn-payment {
+    margin-top: 38px;
+}
+
+.payment .title-vehicle {
+    margin-bottom: 20px;
+}
+
+.payment .text-status {
+    color: #B8BECD;
+    font-size: 32px;
+    font-family: 'Nunito', serif;
+}
+
+.payment .code-payment h1 {
+    font-size: 36px;
+}
+
+.payment .reservation-detail {
+    width: 100%;
+}
+
+.payment .btn-copy-code .button-filled {
+    width: 240px;
+    height: 42px;
+    font-weight: 700;
+}
+
+.payment .qty,
+.payment .date {
+    width: 100%;
+    height: 107px;
+    border: 1px solid #80918E;
+    border-radius: 10px;
+}
+
+.payment .order-detail,
+.payment .identity {
+    width: 100%;
+    height: 245px;
+    border: 1px solid #80918E;
+    border-radius: 10px;
+}
+
+.payment .order-detail {
+    padding-top: 35px;
+    padding-left: 65px;
+}
+
+.payment .identity {
+    padding-top: 69px;
+    padding-left: 59px;
+}
+
+.payment .order-detail h5,
+.payment .identity h5 {
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.payment .order-detail ul,
+.payment .identity ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.payment .order-detail ul li,
+.payment .identity ul li {
+    left: 0;
+}
+
+.payment-transaction .label {
+    font-size: 32px;
+}
+
+.payment-transaction .payment-code,
+.payment-transaction .payment-method {
+    width: 100%;
+    height: 80px;
+    border: 1px solid #80918E;
+    border-radius: 10px;
+}
+
+.payment-transaction .payment-code .button-dark {
+    width: 124px;
+    height: 42px;
+    color: #FFCD61;
+}
+
+.payment-transaction .payment-method select {
+    height: 100%;
+    border: none;
+    font-family: 'Nunito', serif;
+    font-size: 24px;
+    background-image: unset;
+    color: #80918E;
+}
+
+.payment-transaction .select-form .arrow-select {
+    right: 30px;
+    font-size: 30px;
+    font-weight: 900;
+    color: #4A4C53;
+}
+
+.payment-transaction .form-select option {
+    background-color: white;
+    width: 404px;
+    height: 48px;
+    border: 3px solid black;
+}
+
+.history .header-nav {
+    margin-bottom: 105px;
+}
+
+.history .search-input,
+.history .form-select {
+    background-color: rgba(218, 218, 218, 0.27);
+    font-family: 'Mulish', serif;
+    font-size: 24px;
+    color: #B8BECD;
+}
+
+.history .search-input,
+.history .search-input::placeholder {
+    padding-left: 20px;
+    color: #B8BECD;
+}
+
+.history .search-filter {
+    margin-bottom: 45px;
+}
+
+.history .search-filter .search-input {
+    width: 674px;
+    height: 75px;
+}
+
+.history .search-filter .btn-search {
+    right: 5px;
+    width: 75px;
+    height: 75px;
+}
+
+.history .search-filter .btn-search i {
+    font-size: 30px;
+    align-items: center;
+}
+
+.history .search-filter .form-select {
+    width: 157px;
+    height: 75px;
+}
+
+.history .title-date {
+    font-size: 24px;
+    color: #C4C4C4;
+    font-family: 'Nunito', serif;
+    font-weight: 600;
+}
+
+.history .today {
+    margin-top: 45px;
+    font-family: 'Nunito', serif;
+    font-size: 24px;
+    color: #393939;
+}
+
+.history .list-today .list-group-item {
+    border: none;
+    border-bottom: 0.5px solid #C4C4C4;
+    font-weight: 600;
+    width: 866px;
+}
+
+.history .list-today .list-group-item .item {
+    padding-top: 26px;
+}
+
+.history .list-today .list-group-item .item i {
+    font-size: 30px;
+    color: #999999;
+}
+
+.history .week {
+    margin-top: 48px;
+    font-family: 'Nunito', serif;
+    font-size: 24px;
+    color: #393939;
+}
+
+.history .list-week .list-group-item {
+    border: none;
+    margin-bottom: 52px;
+}
+
+.history .list-week img {
+    width: 197px;
+    height: 165px;
+    border-radius: 20px;
+}
+
+.history .list-week h5 {
+    font-weight: 700;
+}
+
+.history .list-week .date {
+    margin-bottom: 14px;
+}
+
+.history .list-week .prepayment {
+    font-weight: 700;
+}
+
+.history .list-week .status {
+    color: green;
+}
+
+.history .button-filled {
+    width: 205px;
+    height: 71px;
+    font-weight: 700;
+}
+
+.new-arrival {
+    border: 1px solid #DADADA;
+    border-radius: 10px;
+}
+
+.new-arrival .title {
+    font-size: 24px;
+    font-weight: 900;
+    font-family: 'Playfair Display', Times, serif;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 54px;
+}
+
+.new-arrival .view-more {
+    color: #B8BECD;
+    font-family: 'Nunito', serif;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+.new-arrival .view-more i {
+    margin-bottom: 22px;
+}
+
+.new-arrival .view-more i {
+    color: #4A4C53;
+    font-size: 43px;
+    text-align: center;
+}
+
+.new-arrival img {
+    width: 275px;
+    height: 332px;
+}
+
+@media (max-width:991px) {
     .header-forgot .header-content {
         padding: 0 10px;
     }
@@ -876,23 +1302,35 @@ nav div a img.mail {
         padding-bottom: 10px;
         width: 100%;
     }
-    .header-title .button-dark {
+    .button-dark {
         width: 100%;
+    }
+    .button-filled {
+        width: 100%;
+    }
+    .button-google {
+        width: 100%;
+    }
+    .header-login-signup .title {
+        text-align: center;
     }
     .form-login-signup div input {
         width: 100%;
     }
-    .form-login-signup div button.button-google {
+    .separator-line {
         width: 100%;
+        height: 1px;
+        background-color: white;
+    }
+    h1.heading {
+        text-align: center;
+    }
+    .header-login form {
+        margin-top: 30px;
         margin-bottom: 20px;
     }
-    .form-login-signup div button.button-filled {
-        width: 100%;
-    }
-    .separator-circle {
-        display: none;
-    }
-    .separator-line {
-        display: none;
+    .header-signup form {
+        margin-top: 30px;
+        margin-bottom: 20px;
     }
 }
