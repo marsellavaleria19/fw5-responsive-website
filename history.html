@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <!--Bootstrap CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css" integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.bundle.min.js" integrity="sha512-sH8JPhKJUeA9PWk3eOcOl8U+lfZTgtBXD41q6cO/slwxGHCxKcW45K4oPCUhHG7NMB4mbKEddVmPuTXtpbCbFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <header>
+        <div id="navbar"></div>
+    </header>
+    <section class="history container mb-5">
+        <div class="row">
+            <div class="col">
+                <form class="search-filter d-flex justify-content-between mb-4">
+                    <div class="d-flex position-relative">
+                        <input class="form-control search-input" type="search" placeholder="Search history" aria-label="Search">
+                        <button class="btn btn-search position-absolute" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div class="select-form ms-3">
+                        <select class="form-select">
+                            <option>Filter</option>
+                            <option value="1">Tipe</option>
+                            <option value="2">Date Added</option>
+                            <option value="3">name</option>
+                            <option value="4">Favorite Product</option>
+                          </select>
+                    </div>
+                </form>
+                <div class="today">
+                    <div class="title-date mb-4">Today</div>
+                    <ul class="list-group list-today">
+                        <li class="list-group-item">
+                            <div class="item d-flex justify-content-between">Please finish your payment for Vespa Rental Jogja <i class="fa-solid fa-angle-right"></i></div>
+                        </li>
+                        <li class="list-group-item mt-2">
+                            <div class="item d-flex justify-content-between">Your payment has been confirmed!<i class="fa-solid fa-angle-right"></i></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="week">
+                    <div class="title-date">A week ago</div>
+                    <ul class="list-group list-week">
+                        <li class="list-group-item d-flex">
+                            <div>
+                                <img src="./assets/image/motorbike1.png" alt="motorbike">
+                            </div>
+                            <div class="ms-4">
+                                <h5 class="card-title">Vespa Matic</h5>
+                                <div class="date">Jan 18 to 21 2021</div>
+                                <div class="prepayment">Prepayment : 245.000</div>
+                                <div class="status">Has been returned</div>
+                            </div>
+
+
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div class="d-flex">
+                                <div>
+                                    <img src="./assets/image/motorbike3.png" alt="motorbike">
+                                </div>
+                                <div class="ms-4">
+                                    <h5 class="card-title">Vespa Matic</h5>
+                                    <div class="date">Jan 18 to 21 2021</div>
+                                    <div class="prepayment">Prepayment : 245.000</div>
+                                    <div class="status">Has been returned</div>
+                                </div>
+                            </div>
+                            <button class="button-filled">Delete</button>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col new-arrival">
+                <div class="d-flex flex-md-column align-items-center">
+                    <div class="title">New Arrival</div>
+                    <div class="position-relative mb-3">
+                        <img src="./assets/image/car2.png" alt="Car2">
+                        <div class="text-title-vehicle ">
+                            <div class="vehicle-name">Lamborgini</div>
+                            <div class="location">South Jakarta</div>
+                        </div>
+                    </div>
+                    <div class="list-img position-relative">
+                        <img src="./assets/image/car4.png" alt="Car4">
+                        <div class="text-title-vehicle">
+                            <div class="vehicle-name">Jeep White</div>
+                            <div class="location">Kalimantan</div>
+                        </div>
+                    </div>
+                    <div class="view-more">
+                        <div>View More</div>
+                        <div class="btn-arrow text-center"><i class="fa-solid fa-chevron-down"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="footer"></div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function() {
+        $.get('./navbar.html', (res) => {
+            $('#navbar').html(res)
+        })
+    })
+
+    $(document).ready(function() {
+        $.get('./footer.html', (res) => {
+            $('#footer').html(res)
+        })
+    })
+</script>
+
+</html>
