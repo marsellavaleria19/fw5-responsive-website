@@ -58,20 +58,29 @@
                 <h1 class="heading">Explore and Travel</h1>
                 <p>Vehicle Finder</p>
                 <div class="line"></div>
-                <form>
-                    <div>
-                        <select>
+                <form class="filter-homepage">
+                    <div class="row row1 g-3">
+                        <div class="col-md-auto">
+                            <select class="form-select" aria-label="Default select example"> 
                             <option>Location</option>
                         </select>
-                        <select>
+                        </div>
+                        <div class="col-md-auto">
+                            <select class="form-select" aria-label="Default select example">
                             <option>Type</option>
                         </select>
+                        </div>
                     </div>
-                    <div>
-                        <select>
-                            <option>Payment</option>
-                        </select>
-                        <input type="date" />
+                    <div class="row g-3">
+                        <div class="col-md-auto">
+                            <select class="form-select" aria-label="Default select example">
+                                <option>Payment</option>
+                            </select>
+                            </select>
+                        </div>
+                        <div class="col-md-auto">
+                            <input class="form-control" type="date" />
+                        </div>
                     </div>
                     <button class="button-filled">Explore</button>
                 </form>
@@ -111,7 +120,7 @@
             </div>
         </div>
     </section>
-    <section class="testimonial container mb-5">
+    <section class="testimonial container">
         <div class="header">
             <h1 class="section-title">Testimonial</h1>
         </div>
