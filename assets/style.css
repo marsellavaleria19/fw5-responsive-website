@@ -754,8 +754,8 @@
             margin-bottom: 112px;
         }
         
-        .detail-vehicle .img-vehicle {
-            width: 610px;
+        .detail-vehicle .img-vehicle img {
+            width: 100%;
             height: 409px;
             margin-bottom: 25px;
         }
@@ -796,7 +796,7 @@
         }
         
         .detail-vehicle .form-quantity input {
-            width: 321px;
+            width: 100%;
         }
         
         .detail-vehicle .button-detail {
@@ -817,15 +817,15 @@
         }
         
         .detail-vehicle .button-detail .btn-chat {
-            width: 443px;
+            width: 100%;
         }
         
         .detail-vehicle .button-detail .btn-reservation {
-            width: 421px;
+            width: 100%;
         }
         
         .detail-vehicle .button-detail .btn-like {
-            width: 225px;
+            width: 100%;
         }
         
         .detail-vehicle .button-detail .btn-like i {
@@ -850,7 +850,7 @@
         }
         
         .reservation .form-quantity input {
-            width: 250px;
+            width: 100%;
         }
         
         .reservation form h5 {
@@ -894,8 +894,13 @@
             color: #4A4C53;
         }
         
-        .btn-payment {
+        .reservation .btn-payment .button-filled {
             margin-top: 92px;
+            width: 100%;
+            height: 89px;
+            font-size: 24px;
+            font-weight: 900;
+            border: none;
         }
         
         .text-detail-payment-reservation {
@@ -1338,6 +1343,10 @@
         }
         
         @media(max-width:767px) {
+            .jumbotron form {
+                margin-top: 48px;
+                width: 60%;
+            }
             .jumbotron .container-fluid {
                 height: 100%;
             }
