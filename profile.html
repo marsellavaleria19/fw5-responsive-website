@@ -26,37 +26,7 @@
 
 <body>
     <header class="profile">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container">
-                <a class="navbar-brand" href="#"><img src="./assets/image/logo.png" alt="Logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto me-5 mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Vehicle Type</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">History</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                    </ul>
-                    <a href="" class="position-relative mx-5">
-                        <img class="mail" src="./assets/image/email 2.png" alt="">
-                        <span class="position-absolute translate-middle badge-mail border border-light rounded-circle">1</span>
-                    </a>
-                    <a href="">
-                        <img src="./assets/image/image 39.png" class="profile rounded-circle" alt="profile">
-                    </a>
-                </div>
-            </div>
-        </nav>
+        <div id="navbar"></div>
     </header>
     <section class="profile container">
         <h1 class="title">Profile</h1>
@@ -71,14 +41,20 @@
                 <div class="detail">+62833467823</div>
                 <div class="detail">Has been active since 2013</div>
             </div>
-            <div class="profile-radio d-flex justify-content-center">
+            <div class="profile-radio d-flex justify-content-center mb-5">
                 <div class="me-5">
-                    <input type="radio" class="radio-gender" name="gender">
-                    <label>Male</label>
+                    <label class="radio-button">
+                        <input type="radio" name="gender">
+                        <div class="checkmark"></div>
+                        <div class="text">Male</div>
+                    </label>
                 </div>
                 <div>
-                    <input type="radio" class="radio-gender" name="gender">
-                    <label>Female</label>
+                    <label class="radio-button">
+                        <input type="radio" name="gender">
+                        <div class="checkmark"></div>
+                        <div class="text">Female</label>
+                    </label>
                 </div>
             </div>
         </div>
@@ -124,6 +100,11 @@
         $(document).ready(function() {
             $.get('./footer.html', (res) => {
                 $('#footer').html(res)
+            })
+        })
+        $(document).ready(function() {
+            $.get('./navbar.html', (res) => {
+                $('#navbar').html(res)
             })
         })
     </script>
