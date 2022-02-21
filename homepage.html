@@ -54,7 +54,7 @@
             </div>
         </nav>
         <div class="jumbotron">
-            <div class="container-fluid">
+            <div class="container">
                 <h1 class="heading">Explore and Travel</h1>
                 <p>Vehicle Finder</p>
                 <div class="line"></div>
@@ -92,41 +92,35 @@
             </div>
         </div>
     </header>
-    <section class="popular-town container">
-        <div class="d-flex justify-content-between mb-5 header">
-            <h1 class="section-title">Popular in town</h1>
-            <a class="section-link-view mt-2 me-5" href="#">View all <i class="fa-solid fa-chevron-right"></i></a>
-        </div>
-        <div class="row">
-            <div class="col">
-                <div class="position-relative">
+    <section class="popular-town">
+        <div class="container">
+            <div class="d-flex justify-content-between mb-5 header">
+                <h1 class="section-title">Popular in town</h1>
+                <a class="section-link-view mt-2 me-5" href="#">View all <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+            <div class="d-flex col-flex-xs flex-md-wrap">
+                <div class="position-relative me-4 mb-md-photo">
                     <img src="./assets/image/popular1.png" alt="Popular1" />
                     <div class="text-title-vehicle">
                         <div class="vehicle-name">Merapi</div>
                         <div class="location">Yogyakarta</div>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="position-relative">
+                <div class="position-relative me-4 mb-md-photo">
                     <img src="./assets/image/popular2.png" alt="Popular2">
                     <div class="text-title-vehicle">
                         <div class="vehicle-name">Teluk Bogam</div>
                         <div class="location">Kalimantan</div>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="position-relative">
+                <div class="position-relative me-4 mb-md-photo">
                     <img src="./assets/image/popular3.png" alt="Popular3">
                     <div class="text-title-vehicle">
                         <div class="vehicle-name">Bromo</div>
                         <div class="location">Malang</div>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="position-relative">
+                <div class="position-relative me-4 mb-md-photo">
                     <img src="./assets/image/popular4.png" alt="Popular4">
                     <div class="text-title-vehicle">
                         <div class="vehicle-name">Malioboro</div>
@@ -134,14 +128,53 @@
                     </div>
                 </div>
             </div>
+            <!-- <div class="row">
+                <div class="col col-sm-6 col-md-5 col-lg">
+                    <div class="position-relative">
+                        <img src="./assets/image/popular1.png" alt="Popular1" />
+                        <div class="text-title-vehicle">
+                            <div class="vehicle-name">Merapi</div>
+                            <div class="location">Yogyakarta</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-sm-6 col-md-5 col-lg">
+                    <div class="position-relative">
+                        <img src="./assets/image/popular2.png" alt="Popular2">
+                        <div class="text-title-vehicle">
+                            <div class="vehicle-name">Teluk Bogam</div>
+                            <div class="location">Kalimantan</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-sm-6 col-md-5 col-lg">
+                    <div class="position-relative">
+                        <img src="./assets/image/popular3.png" alt="Popular3">
+                        <div class="text-title-vehicle">
+                            <div class="vehicle-name">Bromo</div>
+                            <div class="location">Malang</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-sm-6 col-md-5 col-lg">
+                    <div class="position-relative">
+                        <img src="./assets/image/popular4.png" alt="Popular4">
+                        <div class="text-title-vehicle">
+                            <div class="vehicle-name">Malioboro</div>
+                            <div class="location">Yogyakarta</div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
         </div>
+
     </section>
     <section class="testimonial container">
         <div class="header">
             <h1 class="section-title">Testimonial</h1>
         </div>
-        <div class="row">
-            <div class="col">
+        <div class="row d-flex flex-column-reverse flex-sm-row">
+            <div class="col-sm">
                 <div class="star">
                     <span class="fa fa-star"></span>
                     <span class="fa fa-star"></span>
@@ -154,7 +187,7 @@
                     <h6 class="location">Founder Circle</h6>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-sm">
                 <div class="d-inline-block position-relative">
                     <img src="./assets/image/testimonial.png" alt="Testimonial">
                     <div class=" position-absolute button-slide"><img src="./assets/image/previous.png" alt="prev"><img src="./assets/image/next.png" alt="next"></div>

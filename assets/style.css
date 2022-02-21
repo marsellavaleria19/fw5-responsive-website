@@ -352,21 +352,19 @@
             background-size: cover;
         }
         
-        .jumbotron .container-fluid {
+        .jumbotron .container {
             background-color: rgba(0, 0, 0, 0.3);
             width: 100%;
             height: 767px;
         }
         
-        .jumbotron .container-fluid h1.heading {
+        .jumbotron .container h1.heading {
             font-size: 64px;
             font-family: 'Playfair Display', serif;
             text-align: justify;
             font-weight: bold;
-            width: 356px;
             color: white;
             padding-top: 69px;
-            margin-left: 121px;
         }
         
         .jumbotron p {
@@ -374,12 +372,10 @@
             font-size: 22px;
             font-weight: 900;
             color: white;
-            margin-left: 121px;
             margin-top: 74px;
         }
         
         .jumbotron .line {
-            margin-left: 121px;
             margin-top: 17px;
             background-color: white;
             width: 32px;
@@ -392,7 +388,6 @@
         
         .jumbotron form {
             margin-top: 48px;
-            margin-left: 120px;
             margin-right: 30px;
         }
         
@@ -488,14 +483,13 @@
         .popular-town .header {
             margin-bottom: 55px;
         }
-        
-        .popular-town .col {
+        /* .popular-town .col-md-5 {
             margin-bottom: 30px;
-        }
+        } */
         
         .popular-town img {
             height: 332px;
-            width: 261px;
+            width: 100%;
             border-radius: 8px;
         }
         
@@ -654,6 +648,7 @@
             font-family: 'Nunito', serif;
             font-size: 24px;
             padding-bottom: 26px;
+            background-color: white;
         }
         
         .profile-form form div input:focus {
@@ -674,7 +669,7 @@
         .profile-form form div .button-filled,
         .profile-form form div .button-dark,
         .profile-form form div .button-gray {
-            width: 322px;
+            width: 100%;
             height: 89px;
             color: #393939;
             font-size: 24px;
@@ -1343,6 +1338,14 @@
         }
         
         @media(max-width:767px) {
+            .popular-town .col-flex-xs {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .popular-town .mb-md-photo {
+                margin-bottom: 10px;
+            }
             .jumbotron form {
                 margin-top: 48px;
                 width: 60%;
@@ -1359,11 +1362,17 @@
             .jumbotron form .button-filled {
                 margin-bottom: 20px;
             }
+            .testimonial img {
+                width: 100%;
+            }
         }
         
         @media (max-width:991px) {
             .header-forgot .header-content {
                 padding: 0 10px;
+            }
+            .popular-town .mb-md-photo {
+                margin-bottom: 10px;
             }
             .header-forgot .header-content form div input {
                 width: 100%;
@@ -1444,6 +1453,9 @@
         }
         
         @media (max-width:1999px) {
+            .popular-town .mb-md-photo {
+                margin-bottom: 10px;
+            }
             .payment-transaction .payment-code {
                 width: 100%;
             }
