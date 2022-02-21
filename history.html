@@ -30,20 +30,26 @@
     </header>
     <section class="history container mb-5">
         <div class="row">
-            <div class="col">
+            <div class="col-md">
                 <form class="search-filter d-flex justify-content-between mb-4">
-                    <div class="d-flex position-relative">
-                        <input class="form-control search-input" type="search" placeholder="Search history" aria-label="Search">
-                        <button class="btn btn-search position-absolute" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    </div>
-                    <div class="select-form ms-3">
-                        <select class="form-select">
+                    <div class="row">
+                        <div class="col">
+                            <div class="d-flex position-relative">
+                                <input class="form-control search-input" type="search" placeholder="Search history" aria-label="Search">
+                                <button class="btn btn-search position-absolute" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="select-form ms-3">
+                                <select class="form-select">
                             <option>Filter</option>
                             <option value="1">Tipe</option>
                             <option value="2">Date Added</option>
                             <option value="3">name</option>
                             <option value="4">Favorite Product</option>
                           </select>
+                            </div>
+                        </div>
                     </div>
                 </form>
                 <div class="today">

@@ -19,8 +19,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap" rel="stylesheet">
+
     <!--Custom CSS-->
     <link rel="stylesheet" href="./assets/style.css">
+
 </head>
 
 <body>
@@ -33,24 +35,24 @@
             <span>Detail</span>
         </div>
         <div class="row">
-            <div class="col">
+            <div class="col-md">
                 <div class="img-vehicle">
                     <img src="./assets/image/detail-vehicle.png" alt="detail-vehicle">
                 </div>
-                <div class="d-flex justify-content-between img-vehicle-detail align-items-center">
-                    <div class="arrow-button">
+                <div class="d-flex justify-content-left img-vehicle-detail align-items-center">
+                    <div class="arrow-button me-3">
                         <i class="fa-solid fa-chevron-left"></i>
                     </div>
                     <div class="d-flex justify-content-center">
                         <img src="./assets/image/detail-vehicle.png" class="me-4" alt="">
                         <img src="./assets/image/detail-vehicle.png" alt="">
                     </div>
-                    <div class="arrow-button">
+                    <div class="arrow-button ms-3">
                         <i class="fa-solid fa-chevron-right"></i>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md">
                 <div class="title-vehicle">
                     <h1>Fixie-Gray Only</h1>
                     <div class="location">Yogyakarta</div>
@@ -78,7 +80,7 @@
         </div>
         <div class="button-detail d-flex justify-content-between">
             <button class="button-dark btn-chat">Chat Admin</button>
-            <button class="button-filled btn-reservation">Reservation</button>
+            <button class="button-filled btn-reservation" onclick="window.location='./reservation.html';">Reservation</button>
             <button class="button-dark btn-like d-flex justify-content-center align-items-center">
                 <i class="fa-solid fa-heart me-3"></i>Like</button>
         </div>

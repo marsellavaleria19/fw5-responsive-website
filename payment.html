@@ -38,7 +38,7 @@
                     <img src="./assets/image/detail-vehicle.png" alt="detail-vehicle">
                 </div>
             </div>
-            <div class="col-md">
+            <div class="col">
                 <div class="title-vehicle">
                     <h1>Fixie-Gray Only</h1>
                     <div class="location">Yogyakarta</div>
@@ -53,57 +53,69 @@
 
             </div>
         </div>
-        <div class="reservation-detail text-detail-payment-reservation  mt-4">
+        <div class="reservation-detail text-detail-payment-reservation mt-4">
             <div class="row">
-                <div class="col">
-                    <div class="qty text-payment-reservation d-flex justify-content-center align-items-center fw-bold">Qty : 2 bikes</div>
+                <div class="col-md">
+                    <div class="qty d-flex align-items-center justify-content-center fw-bold">Qty : 2 bikes</div>
                 </div>
-                <div class="col date d-flex justify-content-between align-items-center">
-                    <div class="fw-bold">Reservation Date : </div>
-                    <div>Jan 18 - 20 2021</div>
+                <div class="col-md">
+                    <div class="date d-flex justify-content-between align-items-center">
+                        <div class="fw-bold">Reservation Date : </div>
+                        <div>Jan 18 - 20 2021</div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="detail-payment text-detail-payment-reservation  mt-4">
+        <div class="detail-payment text-detail-payment-reservation mt-4">
             <div class="row">
-                <div class="col order-detail  me-4">
-                    <h5>Details:</h5>
-                    <ul>
-                        <li>1 bike : Rp.78.000</li>
-                        <li>1 bike : Rp.78.000</li>
-                    </ul>
-                    <div>Total : Rp. 178.000</div>
+                <div class="col-md">
+                    <div class="detail-order justify-content-center">
+                        <h5>Order details :</h5>
+                        <ul>
+                            <li>1 bike : Rp. 78.000 </li>
+                            <li>1 bike : Rp. 78.000</li>
+                        </ul>
+                        <div class="total fw-bold">Total : 178.000</div>
+                    </div>
                 </div>
-                <div class="col identity align-items-center">
-                    <h5>Identity:</h5>
-                    <ul>
-                        <li>Samantha Doe (+6290987682)</li>
-                        <li>samanthadoe@mail.com</li>
-                    </ul>
+                <div class="col-md">
+                    <div class="identity">
+                        <h5>Identity : </h5>
+                        <ul>
+                            <li>Samantha Doe (+6290987682) </li>
+                            <li>samanthadoe@mail.com</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="payment-transaction text-detail-payment-reservation mt-4">
             <div class="row">
-                <div class="col label fw-bold">Payment Code:</div>
-                <div class="col payment-code d-flex justify-content-between align-items-center">
-                    <div class="fw-bold">#FG1209878YZS</div>
-                    <button class="button-dark">Copy</button>
+                <div class="col-md-7">
+                    <div class="d-flex">
+                        <label for="inputPassword" class="col-form-label">Payment Code : </label>
+                        <div class="d-flex position-relative payment-code align-items-center">
+                            <input type="text" class="form-control payment-code" value="#FG1209878YZS">
+                            <button class="button-dark position-absolute">Copy</button>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="col align-items-center">
+
+                <div class="col-md align-items-center">
                     <div class="select-form payment-method d-flex position-relative align-items-center">
                         <select class="form-select">
-                            <option class="select-items">Select Payment Method</option>
-                            <option class="select-items" value="1">Cash</option>
-                            <option class="select-items" value="2">Transfer</option>
-                          </select>
+                                    <option class="select-items">Select Payment Method</option>
+                                    <option class="select-items" value="1">Cash</option>
+                                    <option class="select-items" value="2">Transfer</option>
+                        </select>
                         <i class="position-absolute arrow-select fa-solid fa-chevron-down"></i>
                     </div>
                 </div>
             </div>
         </div>
         <div class="btn-payment">
-            <button class="button-filled">Finish payment : <span class="text-danger fw-load">59:30</span></button>
+            <button class="button-filled" onclick="window.location='./detail-vehicle.html';">Finish payment : <span class="text-danger fw-load">59:30</span></button>
         </div>
     </section>
     <div id="footer"></div>
