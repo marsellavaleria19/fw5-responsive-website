@@ -30,38 +30,53 @@
     </header>
     <section class="history container mb-5">
         <div class="row">
-            <div class="col">
-                <form class="search-filter d-flex justify-content-between mb-4">
+            <div class="col-lg-8 me-4">
+                <form class="search-filter mb-4">
                     <div class="row">
-                        <div class="col">
-                            <div class="d-flex position-relative">
-                                <input class="form-control search-input" type="search" placeholder="Search history" aria-label="Search">
-                                <button class="btn btn-search position-absolute" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                            </div>
+                        <div class="col-md-8 d-flex position-relative">
+                            <input class="form-control search-input" type="search" placeholder="Search history" aria-label="Search">
+                            <button class="btn btn-search position-absolute" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                         </div>
-                        <div class="col-md">
-                            <div class="select-form ms-3">
-                                <select class="form-select">
+                        <div class="col-md select-form">
+                            <select class="form-select">
+                                <option>Filter</option>
+                                <option value="1">Tipe</option>
+                                <option value="2">Date Added</option>
+                                <option value="3">name</option>
+                                <option value="4">Favorite Product</option>
+                              </select>
+                        </div>
+                    </div>
+                    <!-- <div class="d-flex position-relative">
+                        <input class="form-control search-input" type="search" placeholder="Search history" aria-label="Search">
+                        <button class="btn btn-search position-absolute" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div class="select-form">
+                        <select class="form-select">
                             <option>Filter</option>
                             <option value="1">Tipe</option>
                             <option value="2">Date Added</option>
                             <option value="3">name</option>
                             <option value="4">Favorite Product</option>
                           </select>
-                            </div>
-                        </div>
-                    </div>
+                    </div> -->
                 </form>
                 <div class="today">
                     <div class="title-date mb-4">Today</div>
-                    <ul class="list-group list-today">
+                    <div class="d-flex flex-md-wrap justify-content-between list-today">
+                        <p>Please finish your payment for Vespa Rental Jogja</p><i class="fa-solid fa-angle-right"></i>
+                    </div>
+                    <div class="d-flex flex-md-wrap justify-content-between list-today">
+                        <p>Your payment has been confirmed!</p><i class="fa-solid fa-angle-right"></i></i>
+                    </div>
+                    <!-- <ul class="list-group list-today">
                         <li class="list-group-item">
                             <div class="item d-flex justify-content-between">Please finish your payment for Vespa Rental Jogja <i class="fa-solid fa-angle-right"></i></div>
                         </li>
                         <li class="list-group-item mt-2">
                             <div class="item d-flex justify-content-between">Your payment has been confirmed!<i class="fa-solid fa-angle-right"></i></div>
                         </li>
-                    </ul>
+                    </ul> -->
                 </div>
                 <div class="week">
                     <div class="title-date">A week ago</div>
@@ -97,7 +112,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col new-arrival">
+            <div class="col-lg new-arrival">
                 <div class="d-flex flex-column align-items-center">
                     <div class="title">New Arrival</div>
                     <div class="position-relative mb-3">

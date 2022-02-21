@@ -352,13 +352,13 @@
             background-size: cover;
         }
         
-        .jumbotron .container {
+        .jumbotron .content {
             background-color: rgba(0, 0, 0, 0.3);
             width: 100%;
             height: 767px;
         }
         
-        .jumbotron .container h1.heading {
+        .jumbotron h1.heading {
             font-size: 64px;
             font-family: 'Playfair Display', serif;
             text-align: justify;
@@ -381,10 +381,9 @@
             width: 32px;
             height: 2px;
         }
-        
-        .filter-homepage .row1 {
+        /* .filter-homepage .row1 {
             margin-bottom: 35px;
-        }
+        } */
         
         .jumbotron form {
             margin-top: 48px;
@@ -841,7 +840,7 @@
         }
         
         .reservation .status-vehicle {
-            margin-bottom: 74px;
+            margin-bottom: 60px;
         }
         
         .reservation .form-quantity input {
@@ -851,13 +850,13 @@
         .reservation form h5 {
             font-family: 'Nunito', serif;
             font-size: 24px;
-            margin-top: 73px;
+            margin-top: 60px;
             margin-bottom: 32px;
             font-weight: bold;
         }
         
         .reservation form .input-add {
-            width: 399px;
+            width: 100%;
             height: 80px;
             background-color: rgba(57, 57, 57, 0.1);
             border-radius: 10px;
@@ -867,12 +866,12 @@
         }
         
         .reservation form .select-form {
-            width: 399px;
+            width: 100%;
             height: 80px;
         }
         
         .reservation form .select-form select {
-            width: 399px;
+            width: 100%;
             height: 80px;
             background-color: rgba(57, 57, 57, 0.1);
             border-radius: 10px;
@@ -1160,6 +1159,8 @@
         
         .history .search-input,
         .history .form-select {
+            width: 100%;
+            height: 75px;
             background-color: rgba(218, 218, 218, 0.27);
             font-family: 'Mulish', serif;
             font-size: 24px;
@@ -1174,12 +1175,12 @@
         
         .history .search-filter {
             margin-bottom: 45px;
+            /* width: 100%; */
         }
-        
-        .history .search-filter .search-input {
-            width: 640px;
+        /* .history .search-filter .search-input {
+            width: 100%;
             height: 75px;
-        }
+        } */
         
         .history .search-filter .btn-search {
             right: 5px;
@@ -1191,11 +1192,10 @@
             font-size: 30px;
             align-items: center;
         }
-        
-        .history .search-filter .form-select {
-            width: 157px;
+        /* .history .search-filter .form-select {
+            width: 100%;
             height: 75px;
-        }
+        } */
         
         .history .title-date {
             font-size: 24px;
@@ -1211,7 +1211,19 @@
             color: #393939;
         }
         
-        .history .list-today .list-group-item {
+        .history .list-today {
+            border: none;
+            border-bottom: 0.5px solid #C4C4C4;
+            font-weight: 600;
+            width: 100%;
+            padding-top: 26px;
+        }
+        
+        .history .list-today .list-today i {
+            font-size: 30px;
+            color: #999999;
+        }
+        /* .history .list-today .list-group-item {
             border: none;
             border-bottom: 0.5px solid #C4C4C4;
             font-weight: 600;
@@ -1225,7 +1237,7 @@
         .history .list-today .list-group-item .item i {
             font-size: 30px;
             color: #999999;
-        }
+        } */
         
         .history .week {
             margin-top: 48px;
@@ -1343,17 +1355,10 @@
                 flex-direction: column;
                 align-items: center;
             }
-            .popular-town .mb-md-photo {
-                margin-bottom: 10px;
+            .popular-town .col-flex-xs .mb-md-photo {
+                margin-bottom: 30px;
             }
-            .jumbotron form {
-                margin-top: 48px;
-                width: 60%;
-            }
-            .jumbotron .container-fluid {
-                height: 100%;
-            }
-            .filter-homepage .form-select {
+            .jumbotron form select {
                 width: 100%;
             }
             .jumbotron form input[type="date"] {
@@ -1365,14 +1370,17 @@
             .testimonial img {
                 width: 100%;
             }
+            .history .form-select {
+                margin-top: 30px;
+            }
         }
         
         @media (max-width:991px) {
             .header-forgot .header-content {
                 padding: 0 10px;
             }
-            .popular-town .mb-md-photo {
-                margin-bottom: 10px;
+            .popular-town .flex-md-wrap .mb-md-photo {
+                margin-bottom: 30px;
             }
             .header-forgot .header-content form div input {
                 width: 100%;
@@ -1444,17 +1452,11 @@
             .reservation .form-quantity input {
                 width: 100%;
             }
-            .history .search-filter .search-input {
-                width: 100%;
-            }
-            .history .search-filter .form-select {
-                width: 100%;
-            }
         }
         
         @media (max-width:1999px) {
             .popular-town .mb-md-photo {
-                margin-bottom: 10px;
+                margin-bottom: 30px;
             }
             .payment-transaction .payment-code {
                 width: 100%;

@@ -27,89 +27,92 @@
     <header>
         <div id="navbar"></div>
         <div class="jumbotron">
-            <div class="container-fluid">
-                <h1 class="heading">Explore and Travel</h1>
-                <p>Vehicle Finder</p>
-                <div class="line"></div>
-                <form class="filter-homepage">
-                    <div class="row row1 g-3">
-                        <div class="col-md-auto">
-                            <select class="form-select" aria-label="Default select example"> 
-                            <option>Location</option>
-                        </select>
+            <div class="content">
+                <div class="container">
+                    <h1 class="heading">Explore and Travel</h1>
+                    <p>Vehicle Finder</p>
+                    <div class="line"></div>
+                    <form class="filter-homepage">
+                        <div class="d-md-flex flex-md-wrap mb-md-4">
+                            <select class="form-select me-4 mb-3" aria-label="Default select example"> 
+                                <option>Location</option>
+                                <option>Yogyakarta</option>
+                                <option>Bandung</option>
+                            </select>
+                            <select class="form-select mb-3" aria-label="Default select example">
+                                <option>Type</option>
+                                <option>Bike</option>
+                                <option>Cars</option>
+                            </select>
                         </div>
-                        <div class="col-md-auto">
-                            <select class="form-select" aria-label="Default select example">
-                            <option>Type</option>
-                        </select>
-                        </div>
-                    </div>
-                    <div class="row g-3">
-                        <div class="col-md-auto">
-                            <select class="form-select" aria-label="Default select example">
+                        <div class="d-md-flex flex-md-wrap">
+                            <select class="form-select me-4 mb-3" aria-label="Default select example">
                                 <option>Payment</option>
+                                <option>Cash</option>
+                                <option>Transfer</option>
                             </select>
-                            </select>
-                        </div>
-                        <div class="col-md-auto">
                             <input class="form-control" type="date" />
                         </div>
-                    </div>
-                    <button class="button-filled">Explore</button>
-                </form>
+                        <button class="button-filled">Explore</button>
+                    </form>
+                </div>
             </div>
         </div>
     </header>
-    <section class="popular-town container">
-        <div class="d-flex justify-content-between mb-5 header">
-            <h1 class="section-title">Popular in town</h1>
-            <a class="section-link-view mt-2 me-5" href="#">View all <i class="fa-solid fa-chevron-right"></i></a>
-        </div>
-        <div class="row">
-            <div class="col">
-                <div class="position-relative">
-                    <img src="./assets/image/popular1.png" alt="Popular1" />
-                    <div class="text-title-vehicle">
-                        <div class="vehicle-name">Merapi</div>
-                        <div class="location">Yogyakarta</div>
+    <section class="popular-town">
+        <div class="container">
+            <div class="d-flex justify-content-between mb-5 header">
+                <h1 class="section-title">Popular in town</h1>
+                <a class="section-link-view mt-2 me-5" href="#">View all <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+            <div class="d-flex col-flex-xs flex-md-wrap">
+                <div class="me-4 mb-md-photo">
+                    <div class="position-relative">
+                        <img src="./assets/image/popular1.png" alt="Popular1" />
+                        <div class="text-title-vehicle">
+                            <div class="vehicle-name">Merapi</div>
+                            <div class="location">Yogyakarta</div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="position-relative">
-                    <img src="./assets/image/popular2.png" alt="Popular2">
-                    <div class="text-title-vehicle">
-                        <div class="vehicle-name">Teluk Bogam</div>
-                        <div class="location">Kalimantan</div>
+                <div class="me-4 mb-md-photo">
+                    <div class="position-relative">
+                        <img src="./assets/image/popular2.png" alt="Popular2">
+                        <div class="text-title-vehicle">
+                            <div class="vehicle-name">Teluk Bogam</div>
+                            <div class="location">Kalimantan</div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="position-relative">
-                    <img src="./assets/image/popular3.png" alt="Popular3">
-                    <div class="text-title-vehicle">
-                        <div class="vehicle-name">Bromo</div>
-                        <div class="location">Malang</div>
+                <div class="me-4 mb-md-photo">
+                    <div class="position-relative">
+                        <img src="./assets/image/popular3.png" alt="Popular3">
+                        <div class="text-title-vehicle">
+                            <div class="vehicle-name">Bromo</div>
+                            <div class="location">Malang</div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="position-relative">
-                    <img src="./assets/image/popular4.png" alt="Popular4">
-                    <div class="text-title-vehicle">
-                        <div class="vehicle-name">Malioboro</div>
-                        <div class="location">Yogyakarta</div>
+                <div class="me-4 mb-md-photo">
+                    <div class="position-relative">
+                        <img src="./assets/image/popular4.png" alt="Popular4">
+                        <div class="text-title-vehicle">
+                            <div class="vehicle-name">Malioboro</div>
+                            <div class="location">Yogyakarta</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    </section>
     <section class="testimonial container">
         <div class="header">
             <h1 class="section-title">Testimonial</h1>
         </div>
-        <div class="row">
-            <div class="col">
+        <div class="row d-flex flex-column-reverse flex-sm-row">
+            <div class="col-sm">
                 <div class="star">
                     <span class="fa fa-star"></span>
                     <span class="fa fa-star"></span>
@@ -122,7 +125,7 @@
                     <h6 class="location">Founder Circle</h6>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-sm">
                 <div class="d-inline-block position-relative">
                     <img src="./assets/image/testimonial.png" alt="Testimonial">
                     <div class=" position-absolute button-slide"><img src="./assets/image/previous.png" alt="prev"><img src="./assets/image/next.png" alt="next"></div>
